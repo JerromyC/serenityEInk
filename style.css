@@ -1,0 +1,24 @@
+@import url(fonts/georgia.css);
+@import url(stylesheets/nav.css);
+@import url(stylesheets/hero.css);
+@import url(stylesheets/footer.css);
+
+
+:root {
+    --grey: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.font {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.activeLink {
+    text-decoration: underline;
+}

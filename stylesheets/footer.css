@@ -1,0 +1,49 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--grey);
+    padding: 50px;
+}
+
+.footerTile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32%;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.footerTileHeading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footerTileInner {
+    margin-bottom: 25px;
+}
+
+.footerTileInner span {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.socialWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.footerTileInner a img {
+    width: 75px;
+    margin: auto 5px;
+}

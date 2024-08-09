@@ -1,0 +1,54 @@
+@import url(/style.css);
+
+
+.title {
+    font-size: 20pt;
+    font-weight: 800;
+}
+
+.serviceTileWrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.serviceTile {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.serviceTile:hover {
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.serviceTile:last-of-type {
+    margin-bottom: 0px;
+}
+
+.serviceTile h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.serviceTile p {
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+
+.serviceTile .seeMore {
+font-size: 16pt;
+}
+
+.bgImage {
+    position: fixed;
+    top: 0;
+    left: auto;
+    height: 100vh;
+    width: auto;
+    z-index: -100;
+    opacity: 5%;
+}
