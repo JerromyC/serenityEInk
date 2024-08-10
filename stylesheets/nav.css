@@ -18,6 +18,10 @@ nav a {
     cursor: pointer;
 }
 
+nav a:hover {
+    color: var(--gold);
+}
+
 nav a:first-of-type {
     margin-left: 0;
 }

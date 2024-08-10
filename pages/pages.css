@@ -1,7 +1,18 @@
 @import url(/style.css);
 
 
-.title {
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.mainWrapper h2 {
     font-size: 20pt;
     font-weight: 800;
 }
@@ -40,7 +51,8 @@
 }
 
 .serviceTile .seeMore {
-font-size: 16pt;
+    font-size: 12pt;
+    font-style: italic;
 }
 
 .bgImage {
@@ -50,5 +62,5 @@ font-size: 16pt;
     height: 100vh;
     width: auto;
     z-index: -100;
-    opacity: 5%;
+    opacity: 2.5%;
 }

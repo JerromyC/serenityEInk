@@ -1,19 +1,24 @@
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--grey);
     padding: 50px;
+}
+
+.footerTileContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 .footerTile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 32%;
-    padding: 25px;
-    border: 1px solid black;
+    width: 25%;
+    padding: 50px;
+}
+
+.footerTile:last-of-type {
+    text-align: right;
 }
 
 .footerTileHeading {
@@ -35,15 +40,30 @@ footer {
     margin-bottom: 10px;
 }
 
+.footerTileInner_subSpan {
+    margin-top: 25px;
+}
+
+.footerTileInner ul {
+    list-style: none;
+}
+
 .socialWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     margin: auto;
 }
 
-.footerTileInner a img {
+.footerTileSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerTileSocial a img {
     width: 75px;
     margin: auto 5px;
 }
