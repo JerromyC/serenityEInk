@@ -1,0 +1,98 @@
+.disclaimerWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.disclaimerTile {
+    width: 50%;
+    padding: 25px;
+    align-items: center;
+    text-align: left;
+}
+
+.disclaimer {
+    font-size: 14pt;
+    width: 100%;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.servicesNavContainer {
+    margin-top: 100px;
+}
+
+.servicesNavWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 25px;
+}
+
+.servicesNavTile {
+    position: relative;
+    align-items: center;
+    align-content: center;
+    width: 40%;
+    height: 160px;
+    padding: 25px;
+    margin: 25px auto;
+    color: #fff;
+    background-color: var(--gold);
+}
+
+.left {
+    text-align: right;
+    align-items: right;
+    border-radius: 0 10px 10px 0;
+}
+
+.left::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -80px; /* Adjust this value as needed */
+    transform: translateY(-50%);
+    border-width: 80px 80px 80px 0px; /* Triangle shape */
+    border-style: solid;
+    border-color: transparent var(--gold) transparent transparent; /* Color of the triangle */
+}
+
+.left p {
+    margin-left: auto
+}
+
+.right {
+    text-align: left;
+    border-radius: 10px 0 0 10px;
+}
+
+.right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -99px; /* Adjust this value as needed */
+    transform: translateY(-50%);
+    border-width: 80px 0 80px 100px; /* Triangle shape */
+    border-style: solid;
+    border-color: transparent transparent transparent var(--gold); /* Color of the triangle */
+}
+
+.verticalLine {
+    width: 2px;
+    background-color: #000;
+}
+
+.servicesNavHeader {
+    font-weight: 800;
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+.servicesNavText {
+    font-size: 14pt;
+    width: 100%;
+}

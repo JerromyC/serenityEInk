@@ -27,6 +27,17 @@
     margin: 25px auto;
 }
 
+.divider {
+    margin: 25px;
+}
+
+.serviceHeader {
+    text-align: center;
+    font-weight: 800;
+    font-size: 22pt;
+    margin-bottom: 25px;
+}
+
 .serviceIntro {
     font-size: 18pt;
     width: 80%;
