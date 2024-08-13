@@ -6,6 +6,9 @@
 @import url(stylesheets/services.css);
 
 
+
+/* Global Styles */
+
 :root {
     --grey: #f5f5f5;
     --green: #1A4027;
@@ -24,9 +27,64 @@
     font-weight: 400;
 }
 
+
+
+/* Section Styles */
+
+#main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: var(--darkGrey);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a:hover {
+    color: var(--gold);
+}
+
 .activeLink {
     text-decoration: underline;
 }
+
+
+
+/* Image Styles */
+
+img {
+    width: 30vw;
+    object-fit: cover;
+    margin: 25px auto 0px;
+}
+
+.smallLogo {
+    width: 15vw;
+    object-fit: cover;
+}
+
+
+
+/* Text Styles*/
 
 h1 {
     text-align: center;
@@ -40,26 +98,44 @@ h2 {
     margin-bottom: 25px;
 }
 
-img {
-    width: 30vw;
-    object-fit: cover;
-    margin: 25px auto 0px;
+.italicHeading {
+    text-align: center;
+    font-weight: 800;
+    font-size: 22pt;
+    margin-bottom: 25px;
 }
 
-.smallLogo {
-    width: 15vw;
-    object-fit: cover;
+.honor {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 50%;
 }
 
-a {
-    text-decoration: none;
-    color: var(--darkGrey);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+.mission {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    width: 60%;
 }
 
-a:hover {
-    color: var(--gold);
+.generalText {
+    font-size: 18pt;
+    width: 80%;
+    margin-bottom: 10px;
 }
+
+.subtext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+
+/* Button Styles */
 
 .button {
     width: 20vw;
@@ -79,4 +155,122 @@ a:hover {
 .button:hover {
     background-color: var(--green);
     color: #fff;
+}
+
+
+
+/* Tile Styles */
+
+.tileWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14pt;
+    width:32%;
+    height: auto;
+    padding: 50px;
+    border: 2px solid #333;
+    border-radius: 10px;;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.tile:hover {
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tile img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.tile p {
+
+}
+
+.tile span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin: 25px;
+}
+
+.tile ul {
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    color: black;
+}
+
+.tile .seeMore {
+    margin-top: 15px;
+}
+
+/* serviceTiles----- */
+
+.serviceTileWrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.serviceTile {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.serviceTile:hover {
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.serviceTile:last-of-type {
+    margin-bottom: 0px;
+}
+
+.serviceTile h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.serviceTile p {
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+
+.serviceTile .seeMore {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+
+
+/* Decorative Styles */
+
+.line {
+    background-color: black;
+    height: 2px;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.bgImage {
+    position: fixed;
+    top: 0;
+    left: auto;
+    height: 100vh;
+    width: auto;
+    z-index: -100;
+    opacity: 2.5%;
 }

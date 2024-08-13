@@ -41,7 +41,12 @@
     padding: 25px;
     margin: 25px auto;
     color: #fff;
-    background-color: var(--gold);
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.servicesNavTile:hover {
+    color: var(gold);
 }
 
 .left {
@@ -58,7 +63,7 @@
     transform: translateY(-50%);
     border-width: 80px 80px 80px 0px; /* Triangle shape */
     border-style: solid;
-    border-color: transparent var(--gold) transparent transparent; /* Color of the triangle */
+    border-color: transparent var(--green) transparent transparent; /* Color of the triangle */
 }
 
 .left p {
@@ -78,7 +83,7 @@
     transform: translateY(-50%);
     border-width: 80px 0 80px 100px; /* Triangle shape */
     border-style: solid;
-    border-color: transparent transparent transparent var(--gold); /* Color of the triangle */
+    border-color: transparent transparent transparent var(--green); /* Color of the triangle */
 }
 
 .verticalLine {
