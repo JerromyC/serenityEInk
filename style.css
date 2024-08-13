@@ -64,7 +64,7 @@ a:hover {
 .button {
     width: 20vw;
     height: 50px;
-    margin: 100px auto;
+    margin: auto;
     color: #fff;
     font-size: 14pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
