@@ -192,10 +192,6 @@ h2 {
     object-fit: cover;
 }
 
-.tile p {
-
-}
-
 .tile span {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
@@ -273,4 +269,75 @@ h2 {
     width: auto;
     z-index: -100;
     opacity: 2.5%;
+}
+
+
+
+/* ----------Media Queries----------------- */
+
+@media screen and (max-width: 1000px) {
+    .tileWrapper {
+        width: 100%;
+    }
+
+    .tile {
+        padding: 25px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    #main {
+        padding: 50px  25px 50px 25px;
+    }
+
+    img {
+        width: 50vw;
+    }
+
+    h1 {
+        font-size: 18pt;
+    }
+    
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 25px;
+    }
+    
+    .italicHeading {
+        font-size: 18pt;
+    }
+    
+    .mission {
+        font-size: 14pt;
+    }
+    
+    .generalText {
+        font-size: 16pt;
+    }
+    
+    .subtext {
+        font-size: 14pt;
+    }
+
+    .tileWrapper {
+        flex-direction: column;
+    }
+
+    .tile {
+        display: flex;
+        flex-direction: column;
+        width:80%;
+        padding: 25px;
+        margin: 0px auto 25px;
+    }
+
+    .tile:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .tile img {
+        width: 150px;
+        object-fit: cover;
+    }
 }
