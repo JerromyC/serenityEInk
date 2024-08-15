@@ -340,4 +340,17 @@ h2 {
         width: 150px;
         object-fit: cover;
     }
+
+
+    .serviceTileWrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .bgImage {
+        height: auto;
+        width: 80vw;
+        z-index: -100;
+        opacity: 2.5%;
+    }
 }
