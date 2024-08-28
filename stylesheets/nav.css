@@ -35,3 +35,18 @@ nav a:active {
     top: 15px;
     left: 0px;
 }
+
+@media screen and (max-width: 750px) {
+    nav {
+        height: 75px;
+        width: 100%;
+        padding-top: 20px;
+        background-color: var(--grey);
+    }
+    nav a {
+        margin-left: 25px;
+    }
+    .floatingNav {
+        top: 5px;
+    }
+}

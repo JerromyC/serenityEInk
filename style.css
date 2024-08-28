@@ -348,6 +348,10 @@ h3 {
         font-size: 14pt;
     }
 
+    .serviceTileWrapper:last-of-type {
+        width: 100%;
+    }
+
     .tileWrapper {
         flex-direction: column;
     }
