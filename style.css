@@ -12,7 +12,11 @@
 :root {
     --grey: #f5f5f5;
     --green: #1A4027;
-    --gold: #A4763B;
+    --green-light: #d6f1df;
+    --green-light_opaque: #d6f1df5a;
+    --gold: hsl(34, 47%, 44%);
+    --gold-light: #f3e4d1;
+    --gold-light_opaque: #f3e4d15a;
     --darkGrey: #333333
 }
 
@@ -237,11 +241,12 @@ h3 {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--green-light_opaque);
 }
 
 .serviceTile:hover {
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+    background-color: var(--green-light);
 }
 
 .serviceTile:last-of-type {
@@ -261,6 +266,16 @@ h3 {
 .serviceTile .seeMore {
     font-size: 12pt;
     font-style: italic;
+}
+
+/* ----------service tiles for coming soon services---------- */
+
+.comingSoonWrapper .serviceTile {
+    background-color: var(--gold-light_opaque);
+}
+
+.comingSoonWrapper .serviceTile:hover {
+    background-color: var(--gold-light);
 }
 
 

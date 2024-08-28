@@ -3,60 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../stylesheets/services.css">
     <title>Serenity E Ink</title>
 </head>
 <body>
     <nav>
-        <a href="../pages/business.html">Business</a>
-        <a class="activeLink" href="../pages/home.html">Home</a>
-        <a href="../pages/land.html">Land</a>
-        <a class="floatingNav" href="../index.html">&LeftArrow; Main</a>
+        <a href="/pages/business.html">Business</a>
+        <a href="/pages/home.html">Home</a>
+        <a href="/pages/land.html">Land</a>
+        <a class="floatingNav" href="/index.html">&LeftArrow; Main</a>
     </nav>
     
     <section id="main">
         <div class="mainWrapper">
             <span class="honor">proudly serving customers in Georgia and Florida since 2015</span>
-            <h1>Bringing peace of mind to your HOME</h1>
-            <img src="../../assets/Serenity e Ink TransparentLOGO+Slogan-02.jpg" alt="serenity E Ink logo">
+            <img class="smallLogo" src="../../assets/Serenity e Ink TransparentLOGO+Slogan-02.jpg" alt="serenity E Ink logo">
+            <h1>Schedule</h1>
+
             <div class="line"></div>
         </div>
-        <p class="generalText">At Serenity E Ink, we believe that enhancing the quality of your home goes hand in hand with reducing environmental impact and lowering costs.</p>
-        <p class="generalText">Our home services are designed to help you create a more sustainable and efficient living environment while also saving you money.</p>
-        <p class="subtext"> Explore our services designed to meet your unique needs and join us in creating a greener future.</p>
-
-        <div class="serviceTileWrapper">
-            <h2>Services for Home</h2>
-            <div class="serviceTile">
-                <h3>Healthy Living</h3>
-                <p>Promote a healthier lifestyle with our range of services designed to improve your well-being. From air and water purification to health-focused home upgrades, we've got you covered.</p>
-                <a class="seeMore" href="./servicesHome/healthyLiving.html">learn more...</a>
-            </div>
-        </div>
-        <div class="serviceTileWrapper comingSoonWrapper">
-            <h2>Services Coming Soon</h2>
-            <div class="serviceTile">
-                <h3>Lighting</h3>
-                <p>Enhance your home's energy efficiency with our lighting services. We offer energy-saving lighting solutions that not only reduce your electricity bills but also create a comfortable living environment.</p>
-            </div>
-            <div class="serviceTile">
-                <h3>Environmentally Friendly Services</h3>
-                <p>Choose from our selection of eco-friendly products that are both sustainable and cost-effective. Our products are designed to reduce your environmental footprint while providing practical benefits for your home.</p>
-            </div>
-            <div class="serviceTile">
-                <h3>Communications</h3>
-                <p>Optimize your business transactions with our comprehensive merchant services. We offer secure and efficient payment processing solutions to streamline your operations and improve customer satisfaction.</p>
-            </div>
-            <div class="serviceTile">
-                <h3>Gluten Free Foods</h3>
-                <p>Enjoy a healthier diet with our gluten-free food options. We source high-quality gluten-free products to cater to your dietary needs and preferences.</p>
-            </div>
-            <div class="serviceTile">
-                <h3>Surveilance</h3>
-                <p>Protect your home with our advanced security solutions. We offer a variety of security products and services to ensure your family's safety and peace of mind.</p>
-            </div>
-        </div>
-        <img class="bgImage" src="../assets/2.png" alt="">
+        <h2>Use the calendar below to schedule a date and time that works for you!</h2>
+        <div id="calendly-inline-widget" style="min-width:50vw;"></div>
+        <p class="generalText">We do require an up front $25 service fee to perform the cost analysis, but it will be deducted from the overall price, should you move forward with an installation.</p>
+        <p class="generalText" style="text-align: center;margin: 50px auto 25px;">Use the button below to set up the payment</p>
+        <a class="button" id="paypal-button-container" target="_blank">Get Started</a>
+        <img class="bgImage" src="../../assets/1.png" alt="">
     </section>
     <footer>
         <div class="footerTileContainer">
@@ -125,16 +97,40 @@
             <span class="footerTileHeading">Socials</span>
             <div class="socialWrapper">
                 <a href="">
-                    <img src="./assets/1.png" alt="">
+                    <img src="../../assets/1.png" alt="">
                 </a>
                 <a href="">
-                    <img src="./assets/1.png" alt="">
+                    <img src="../../assets/2.png" alt="">
                 </a>
                 <a href="">
-                    <img src="./assets/1.png" alt="">
+                    <img src="../../assets/3.png" alt="">
                 </a>
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script type="text/javascript">
+  // Initialize the Calendly inline widget
+  Calendly.initInlineWidget({
+    url: 'https://calendly.com/norwalldesign/sample-event?preview_source=et_card&month=2024-09',
+    parentElement: document.getElementById('calendly-inline-widget'),
+    // Ensure you use inline styles
+    inlineStyles: true,
+    embedType: 'Inline',
+    resize: true // Make sure resizing is enabled
+  });
+
+  // Listen for postMessage events from Calendly
+  window.addEventListener('message', function(event) {
+    if (event.data.event === 'calendly.page_height') {
+      // Update the height of the Calendly widget
+      document.getElementById('calendly-inline-widget').style.height = event.data.payload.height + 'px';
+    }
+  });
+</script>
+
+<!-- Paypal code -->
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
+<script src="./scripts/calendly.js"></script>
 </body>
 </html>
