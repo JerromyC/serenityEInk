@@ -59,6 +59,13 @@ footer {
 
 .footerTile li {
     margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--darkGrey);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.footerTile li:hover {
+    color: var(--gold);
 }
 
 .socialWrapper {
